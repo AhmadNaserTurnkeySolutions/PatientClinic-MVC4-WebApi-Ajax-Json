@@ -1,0 +1,192 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+    @{
+    var baseurl = Request.Url.GetLeftPart(UriPartial.Authority);
+   // This is Base e.x : http://localhost:8000
+}
+   <div id="HeaderPart2" >
+   
+   <div id="slider-container" style="background:red;">
+   
+   
+<div id="slides" style="overflow: hidden; display: block;width: 686px;height: 320px;">
+      <img src="@Session["baseurl"]/Content/img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img src="@Session["baseurl"]/Content/img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img src="@Session["baseurl"]/Content/img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+      <img src="@Session["baseurl"]/Content/img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><<</a>
+      <a href="#" class="slidesjs-next slidesjs-navigation">>></a>
+    </div>
+	  
+	  
+	  
+
+	  
+	  
+
+	  </div>
+	  
+	  
+      <div id="mainArrow">
+           <img src="@Session["baseurl"]/Content/img/3.jpg"/>
+           <img src="@Session["baseurl"]/Content/img/4.jpg"/>
+       </div>
+       <aside>
+        <ul >
+         <li rel='prettyPhoto[ahmad]' href="http://localhost:1491/Home/Appointments?iframe=true&width=480&height=360">العيادة الالكترونية</li>
+         <li>المقالات الطبية</li>
+         <li>اسئلة متكررة</li>
+         <li>الارشادات قبل وبعد العملية</li>
+         <li>استشر طبيبك</li>
+
+
+        </ul>
+        <div id="socialLogos">
+         <img src="@Session["baseurl"]/Content/img/5.jpg" />
+         <img src="@Session["baseurl"]/Content/img/6.jpg" />
+         <img src="@Session["baseurl"]/Content/img/7.jpg" />
+         <img src="@Session["baseurl"]/Content/img/8.jpg" />
+
+        </div>
+
+
+       </aside>
+
+
+
+   </div>
+
+
+<section id="main">
+<div id="twitter">
+<div id="title">تويتر</div>
+<div id="part1">
+	<div id="box">
+	
+	</div>
+	<div id="name">
+	محمد احمد 
+	</div>
+	<div id="article">
+هذا النص هو مثال لنص يكم ان يستبدل في نفس المساحة
+	</div>
+</div>
+<div id="part2">
+<div id="box">
+	
+	</div>
+	<div id="name">
+	فاطمة محمد 
+	</div>
+	<div id="article">
+هذا النص هو مثال لنص يكم ان يستبدل في نفس المساحة
+	</div></div>
+<div id="part3">
+<div id="box">
+	
+	</div>
+	<div id="name">
+	ابراهيم اسعد
+	</div>
+	<div id="article">
+هذا النص هو مثال لنص يكم ان يستبدل في نفس المساحة
+	</div></div>
+
+
+</div>
+<div id="facebook">
+<div id="title">فيسبوك</div>
+<div id="part1">
+	<div id="box">
+	
+	</div>
+	<div id="name">
+	محمد احمد 
+	</div>
+	<div id="article">
+هذا النص هو مثال لنص يكم ان يستبدل في نفس المساحة
+	</div>
+</div>
+<div id="part2">
+<div id="box">
+	
+	</div>
+	<div id="name">
+	فاطمة محمد 
+	</div>
+	<div id="article">
+هذا النص هو مثال لنص يكم ان يستبدل في نفس المساحة
+	</div></div>
+<div id="part3">
+<div id="box">
+	
+	</div>
+	<div id="name">
+	ابراهيم اسعد
+	</div>
+	<div id="article">
+هذا النص هو مثال لنص يكم ان يستبدل في نفس المساحة
+	</div></div>
+
+
+</div>
+
+<div id="reserve">
+
+<div id="title">حجز المواعيد</div>
+<div id="name2">
+	رقم الملف (ان وجد) 
+	</div>
+<div id="name2">
+	الاسم
+	</div>
+<input type="text" id="num" class="filename" name="filename">
+<input type="text" id="num1" class="patientname" name="patientname">
+<div id="name2">
+رقم الجوال
+	</div>
+<div id="name2">
+	البريد الالكتروني
+	</div>
+<input type="text" id="num" class="jawwal" name="jawwal">
+<input type="text" id="num1" class="email" name="email">
+<div id="name3">
+	الطبيب المعالج
+	</div>
+	<div id="sdiv">
+	<img id="img" src="@Session["baseurl"]/Content/img/pic.jpg"/>
+	<select id="select" name="doctorslected" class="doctorslected" selected="1">
+
+</select>
+</div>
+<div id="box3" class="appointment-submitter">
+حجز
+
+</div>
+
+
+</div>
+
+
+
+
+
+</section>
+
+<section id="youtube">
+  <div id="ved">
+<iframe width="601" height="355px"
+src="http://www.youtube.com/embed/TBWX97e1E9g">
+</iframe>
+</div>
+<div id="education">
+<div id="education1" >
+  <div class="educ">التعليم الطبي المستمر</div>
+  <div class="educ">بريد الموظف</div>
+  <div class="educ">فرص عمل</div>
+   </div>
+  <div id="educ2"><div id="educ3">اعلان متجدد </div>
+  </div>
+</div>
+  </section>

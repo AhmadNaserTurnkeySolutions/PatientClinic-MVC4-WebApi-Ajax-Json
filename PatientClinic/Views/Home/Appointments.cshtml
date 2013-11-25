@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+    <script src="~/Content/js/jquery.prettyPhoto.js"></script>
+        <script src="~/Scripts/appointmentmanager.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Appointments</title>
+
+
+
+          <script>
+
+              $(document).ready(function () {
+
+
+
+   
+
+
+
+                  var temp = "";
+                  var x = "";
+                  $.ajax({
+                      contentType: 'application/json; charset=utf-8',
+                      data: '',
+                      url: "../api/Appointment",
+                      type: "GET",
+                      crossDomain: true,
+                      headers: { 'X-Requested-With': 'XMLHttpRequest' },
+                      success: function (data) {
+                          $.each(data, function (index, item) {
+
+
+                              temp = temp + " <p style='background:gray;color:black;font-weight:bold;'>" +
+                               " <h1>" + item.FileNumber + "</h1>" +
+                               "  <h3>" + item.PatientName + "</h3>" +
+                                "   <h3>" + item.PatientEmail + "</h3>" +
+                               "    <h2 style='background:#c3c3c3;'>" + item.Doctor.Name + "</h2>";
+                              "    </p>";
+
+
+                          });
+                          $('#all-appointments').html(temp);
+                          temp = "";
+
+                      }
+
+                  });
+
+
+
+                
+
+
+
+            
+
+
+             
+              });
+
+
+        </script>
+
+</head>
+<body> 
+    <div id="all-appointments">
+    </div>
+</body>
+</html>

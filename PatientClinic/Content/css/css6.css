@@ -1,0 +1,536 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #C0C0C0;
+}
+
+#slider-container
+{
+background:red;width: 686px;float: left;height: 300px;
+}
+
+#page{
+  width: 1060px;
+  height: 1200px;
+   margin: 0 auto;
+   background-color: white;
+   border-top: 3px solid #EA6C17  ;
+
+}
+header{
+   width: 100%;
+
+
+}
+
+#HeaderPart1{
+   width: 100%;
+  height: 110px;
+  background-color: #FCFCFC ;
+  border-bottom: 1px solid #DDDDDD;
+
+}
+
+
+#language{
+  width: 50px;
+  height: 30px;
+  border-bottom: 2px solid #BB7A50;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 68px;
+  margin-top: 20px;
+  color: #7E7E7E;
+  line-height: 38px;
+
+}
+
+#search{
+  width: 120px;
+  height: 23px;
+  background-color: #FCFCFC ;
+  margin-left: 68px;
+  margin-top: 30px;
+  border: 1px solid #ECECEC;
+   text-align: right;
+   font-size: 17px;
+   color: #C5C5C5   ;
+   font-family: Arial Unicode MS;
+   padding-right: 4px;
+  padding-bottom: 5px;
+  float:left;
+
+
+}
+
+
+#menu{
+  width: auto;
+  height: 30px;
+  float:left;
+  margin-top: 30px;
+
+}
+
+
+
+#ul1{
+  width: 550px;
+  height: 30px;
+  float:left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 34px;
+  font-family: Sakkal Majalla;
+  font-size: 22px;
+  font-weight: bold;
+
+
+}
+
+
+.ul1li{
+  width: 60px;
+  height: 34px;
+  float:left;
+  margin-left: 30px;
+
+
+}
+#ul1 a{
+   color: #5A5A5A;
+text-decoration: none;
+
+ }
+ #ul2 a{
+   color: #5A5A5A;
+   text-decoration: none;
+
+ }
+#ul2 {
+  width: 100px;
+  height: 75px;
+  position: absolute;
+  z-index: 2;
+  display: none;
+  list-style: none;
+  padding: 0;
+  font-family: Sakkal Majalla;
+  font-weight: bold;
+  margin: 0;
+
+}
+#ul2 img{
+  margin-top:-10px;
+
+}
+#ul2div{
+  margin-top:-13px;
+}
+
+
+#ul2 li {
+  width: 100px;
+  height: 23px;
+  line-height: 23px;
+    text-align: center;
+   background-color: #FCFCFC;
+   font-size: 20px;
+   border: 1px solid #DEDEDE;
+
+
+}
+
+#ul1 li:hover ul {
+    display: block;
+
+}
+a:active {color:red;}
+#ul1 li:hover #a1{
+  color: #EF6B18;
+}
+
+
+
+#ul1  ul li:hover a{
+  color: #EF6B18;
+}
+
+
+#logo{
+  float:right;
+  margin:0 88px 0px 0;
+
+}
+
+#HeaderPart2{
+   width: 920px;
+  height: 315px;
+
+  border-bottom: 1px solid #DDDDDD;
+  margin: 20px  auto;
+
+
+}
+  #mainimg{
+    float :left;
+    width: 687px;
+  height: 301px;
+  position: relative;
+
+  }
+
+  #mainText {
+       width: 170px;
+  height: 120px;
+    position: absolute;
+    z-index:1;
+    margin: 25px 0 0 30px;
+    text-align: right;
+     font-family: Sakkal Majalla;
+     font-size: 19px;
+     color: #5A5A5A;
+
+  }
+
+  #mainTiltle{
+    color: #EF6B18 ;
+    margin-bottom: 20px;
+
+
+  }
+
+  #mainArrow{
+    position: absolute;
+    z-index:1;
+    margin: 250px 0 0 40px;
+
+  }
+  #mainArrow img{
+    margin-right:  25px;
+  }
+
+  aside{
+    float:right;
+    width: 210px;
+    height: 301px;
+  }
+
+  aside ul{
+    width: 100%;
+       height: 150px;
+       list-style: none;
+       margin:0;
+       padding:0;
+
+  }
+    aside li{
+    width: 208px;
+       height: 30px;
+       background-color: #FCFCFC;
+       border: 1px solid #EFEFEF;
+       text-align: center;
+       font-family: Sakkal Majalla;
+       color: #6A6A6A;
+       font-weight: 700;
+       font-size: 18px;
+
+
+  }
+
+   aside li:hover{
+       width: 208px;
+       height: 30px;
+       background-color: #FFFFFF;
+       border-bottom: 2px solid #EF6B18;
+       border-left: none;
+       border-right: none;
+       border-top: none;
+
+
+
+
+  }
+
+  #socialLogos{
+
+       width: 160px;
+       height: 45px;
+       padding:0;
+       margin: 52px 0px 0 23px; ;
+
+  }
+   #socialLogos img{
+
+       padding:0;
+       margin: 0;
+       float:left;
+
+  }
+
+
+#main{
+width: 920px;
+height: 250px;
+border-bottom: 1px solid #DDDDDD;
+margin: 20px auto;
+margin-top: 10px;
+}
+#reserve{
+
+width:280px;
+height:233px;
+float:left;
+
+
+}
+#facebook{
+float:left;
+width:297px;
+height:233px;
+
+margin-right: 18px;
+
+}
+#twitter{
+float:left;
+width:297px;
+height:233px;
+
+margin-right: 18px;
+
+}
+
+#title{
+
+
+     color: #5A5A5A;
+ text-align: center;
+ font-family: Sakkal Majalla;
+font-size: 22px;
+font-weight: bold;
+border-bottom: 3px solid #EF6B18;
+}
+
+#box{
+width:44px;
+height:47px;
+float:right;
+
+border:1px solid #DEDEDE;
+
+}
+#name{
+
+width: 240px;
+float: right;
+
+text-align: right;
+margin-right: 8px;
+color: #EF6B18;
+font-family: Sakkal Majalla;
+font-size: 18px;
+margin-top: -7px;
+font-weight: bold;
+
+}
+#article{
+text-align: right;
+float: right;
+font-family: Sakkal Majalla;
+width: 240px;
+font-size: 16px;
+
+margin-top: -3px;
+margin-right: 8px;
+line-height: 14px;
+}
+
+#part1{
+
+width: 297px;
+height:64px;
+margin-top: 21px;
+}
+
+#part2{
+
+width: 297px;
+height:64px;
+
+}
+#part3{
+
+width: 297px;
+height:64px;
+
+}
+
+
+
+
+
+#name2{
+
+width: 130px;
+float: right;
+
+text-align: right;
+margin-right: 8px;
+
+font-family: Sakkal Majalla;
+font-size: 18px;
+margin-top: 9px;
+font-weight: bold;
+color: rgb(109, 101, 101);
+
+}
+#num{
+border: 1px solid rgb(209, 206, 206);
+float:right;
+width: 131px;
+height:25px;
+background-color:#FCFCFC;
+}
+#num1{
+border: 1px solid rgb(209, 206, 206);
+margin-right: 6px;
+float: right;
+width: 135px;
+height: 25px;
+background-color: #FCFCFC;
+}
+
+#name3{
+
+width:280px;
+float: right;
+
+text-align: right;
+
+font-family: Sakkal Majalla;
+font-size: 18px;
+margin-top: 9px;
+font-weight: bold;
+color: rgb(109, 101, 101);
+}
+
+#select {
+
+border:none;
+width: 151px;
+height: 30px;
+background-color: #FCFCFC;
+padding-left: 69px;
+font-family: Sakkal Majalla;
+font-weight: bold;
+color: rgb(109, 101, 101);
+font-size: 18px;
+}
+
+#select option{
+
+border:none;
+width: 131px;
+height: 30px;
+background-color: #FCFCFC;
+text-align: right;
+
+}
+
+#sdiv{
+
+border: 1px solid rgb(209, 206, 206);
+
+width: 131px;
+height: 30px;
+background-color: #FCFCFC;
+overflow:hidden;
+float: right;
+
+}
+#img{
+position:absolute;
+z-index:2;
+margin-top: 9px;
+margin-left:18px;
+}
+#box3{
+width: 71px;
+height: 30px;
+font-family: Sakkal Majalla;
+text-align:center;
+color:white;
+float: left;
+background-color:#EF6B18;
+font-weight:bold;
+line-height: 27px;
+}
+
+
+#ved
+  {
+    width:601px;
+    height:335px;
+    
+  }
+  #youtube
+  {
+    width: 920px;
+height: 400px;
+margin: 20px auto;
+margin-top: 20px;
+  }
+  .educ
+  {
+     font-family: Sakkal Majalla;
+     font-size: 19px;
+     color:black;
+     border: 1px solid #DEDEDE;
+     background:#FCFCFC;
+     width:280px;
+     height:39px;
+     text-align:center;
+  }
+  #education
+  {
+    width:280px;
+    margin-top: -335px;
+
+float: right;
+  }
+  #educ2
+  {
+    width: 280px;
+    height:220px;
+    border: 1px solid #DEDEDE;
+    background:#FCFCFC;
+    font-family: Sakkal Majalla;
+    font-size: 19px;
+    text-align:center;
+    margin-top: 12px;
+    }
+    #educ3
+    {
+      margin-top: 77px;
+    }
+    #footer
+    {
+      background:#222222;
+      width:1060px;
+      height:59px;
+    
+    }
+    #foot
+    {
+      color:#5A5A5A;
+      text-align:center;
+      font-size : 17px;
+      font-family: Sakkal Majalla;
+      line-height: 48px;
+    }
+    #education1 :hover
+    {
+      border-top: 3px solid #EF6B18;
+    }

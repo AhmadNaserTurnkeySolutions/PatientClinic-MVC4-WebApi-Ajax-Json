@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    @{
+
+}
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+
+
+      
+        <link href="@Session["baseurl"]/Content/css/css6.css" rel="stylesheet" />
+
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+        <script src="~/Content/js/jquery.prettyPhoto.js"></script>
+        <script src="~/Scripts/appointmentmanager.js"></script>
+        <link href="~/Content/css/prettyPhoto.css" rel="stylesheet" />
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+        <script src="@Session["baseurl"]/Content/js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+      $(function () {
+          $('#slides').slidesjs({
+              width: 686,
+              height: 301,
+              navigation: false
+          });
+
+          $("li[rel^='prettyPhoto']").prettyPhoto({ social_tools: '' });
+
+      });
+  </script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Optional: If you'd like to use this design -->
+  <style>
+
+
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(@Session["baseurl"]/Content/img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+	.slidesjs-control img
+	{
+	z-index: 0 !important;
+	}
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+  <!-- End SlidesJS Optional-->
+
+
+
+    </head>
+    <body>
+  @*  <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
+        *@
+
+
+
+ <div id="page" >
+<header >
+
+
+
+
+   <div id="HeaderPart1" >
+  <div id="language">English</div>
+    <input id="search" type="text"  value="بحث" />
+       <div id="menu">
+        <ul id="ul1">
+         <li class="ul1li"><a id="a1" href="#" >اتصل بنا  </a>
+              <ul id="ul2">
+              <img src="@Session["baseurl"]/Content/img/10.jpg" />
+            <div id="ul2div"><li> <a href="#">كلمة ترحيبية</a></li>
+            <li id="ul2li"><a href="#">تاريخنا </a></li> </div>
+        </ul>
+
+         </li>
+
+
+         <li class="ul1li"><a id="a1" href="#" >الامكانيات </a>
+              <ul id="ul2">
+              <img src="@Session["baseurl"]/Content/img/10.jpg" />
+            <div id="ul2div"><li><a href="#"> كلمة ترحيبية</a></li>
+            <li><a  href="#">تاريخنا</a></li> </div>
+        </ul>
+          </li>
+
+
+
+         <li class="ul1li"><a id="a1" href="#">خدماتنا  </a>
+         <ul id="ul2">
+              <img src="@Session["baseurl"]/Content/img/10.jpg" />
+            <div id="ul2div"><li><a  href="#"> كلمة ترحيبية</a></li>
+            <li><a  href="#">تاريخنا</a></li> </div>
+        </ul>
+         </li>
+
+
+         <li class="ul1li"><a id="a1" href="#">اطباؤنا</a>
+         <ul id="ul2">
+              <img src="@Session["baseurl"]/Content/img/10.jpg" />
+            <div id="ul2div"><li><a  href="#"> كلمة ترحيبية</a></li>
+            <li><a  href="#">تاريخنا</a></li> </div>
+        </ul></li>
+
+
+
+         <li class="ul1li"><a id="a1" href="#">من نحن  </a>
+                 <ul id="ul2">
+              <img src="@Session["baseurl"]/Content/img/10.jpg" />
+            <div id="ul2div"><li> <a  href="#">كلمة ترحيبية</a></li>
+            <li><a  href="#">تاريخنا</a></li> </div>
+        </ul>
+
+
+
+          </li>
+         <li class="ul1li"><a id="a1" href="@Session["baseurl"]/Home/Index">الرئيسية </a>
+       
+
+             <ul id="ul2">
+              <img src="@Session["baseurl"]/Content/img/10.jpg" />
+            <div id="ul2div"><li ><a href="#"> كلمة ترحيبية</a></li>
+            <li><a  href="#">تاريخنا</a></li> </div>
+        </ul>
+
+
+
+         </li>
+
+
+        </ul>
+
+
+       </div>
+
+       <img id="logo" src="@Session["baseurl"]/Content/img/1.jpg" />
+   </div>
+
+
+</header>
+
+                 <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+
+  <div id="footer"><div id="foot">جميع الحقوق مطبوعة 2013 </div>
+  </div>
+ 
+ 
+
+</div>
+
+
+
+    </body>
+</html>

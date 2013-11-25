@@ -1,0 +1,10 @@
+﻿@{
+   Layout = "~/Views/Shared/_Layout.cshtml";
+   var baseurl = Request.Url.GetLeftPart(UriPartial.Authority);
+   // This is Base e.x : http://localhost:8000
+   if (Session["baseurl"] == null)
+   {
+       Session["baseurl"] = baseurl;
+   }
+  // var baseurl = Request.Url.GetLeftPart(UriPartial.Authority);
+}
